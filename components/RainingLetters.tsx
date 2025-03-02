@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect, useCallback, useRef } from "react"
+import Music from "./Music";
 
 export const useSystemInfo = () => {
   const getBrowserInfo = () => {
@@ -260,6 +261,7 @@ const RainingLetters: React.FC = () => {
   return (
     <div className="relative w-full h-screen bg-black overflow-hidden">
       {/* Title */}
+      <Music/>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
         <ScrambledTitle />
       </div>
